@@ -1,0 +1,26 @@
+export type Project = { id: string; name: string; desc: string; url?: string };
+
+export const projects: Project[] = [
+  { id: "32b4684c-a2ce-4bce-b7da-40db3aef002d", name: "Design Magic Box", desc: "Zamienia projekty z Figmy na gotowe strony." },
+  { id: "7c40afc9-5d62-4e26-8703-fb0c05436327", name: "Beauty Clinic", desc: "Strona kliniki Beauty & Mind w Siedlcach.", url: "https://glow-medspa-hub.lovable.app" },
+  { id: "625b2d17-3bd2-491f-ba0f-9c0134c08779", name: "mcml.pro", desc: "Przewodnik po zabiegu laserowym LHP.", url: "https://https-gentle-lhp-journey-lovable-app.lovable.app" },
+  { id: "c7e70e03-3f90-4937-861a-ddfdd71d13d5", name: "Graftgen.com", desc: "Opieka po przeszczepie włosów.", url: "https://graft-guardian-protocol.lovable.app" },
+  { id: "1f31b8b6-8c8e-4be7-8a9d-1c7b9c2b9e3e", name: "Your Health Compass", desc: "Przygotowanie do konsultacji proktologicznych i flebologicznych." },
+  { id: "8ed7924c-27c5-4ae0-9416-bcd4ec39faf9", name: "MySkinCode.ai", desc: "Ustawienia urządzeń i baza klientów.", url: "https://bujok-device-buddy.lovable.app" },
+  { id: "eed23e22-fbd8-476e-b8e8-3685c97a03c6", name: "My Skin Code", desc: "Wgrywanie i zarządzanie plikami." },
+  { id: "5553d05c-888b-4a5f-afe1-8d6b76ea44da", name: "Remix of MySkinCode.pl", desc: "Ustawienia urządzeń, np. lasera CL300." },
+  { id: "74147aba-a723-4705-a5d3-d374c5e2fb39", name: "Remix of Graftgen.com", desc: "Treści o rekonwalescencji po przeszczepie." },
+  { id: "f3eebc1d-00fd-4c3e-a748-2d3f00a5504d", name: "Graft Genesis", desc: "Nowoczesna opieka po przeszczepie włosów." },
+  { id: "a8685ef9-5b7c-4361-9ecf-003cd3ebe23d", name: "Graft Revival System", desc: "Przeżywalność graftów po zabiegu FUE." },
+  { id: "4001eb16-db41-4806-a7b2-89aa644848ca", name: "Remix of Swift Site Studio", desc: "Generator stron internetowych.", url: "https://code-from-thought-31.lovable.app" },
+  { id: "fa05d9f5-6d00-473d-9dce-e4f363a6a621", name: "Swift Site Studio", desc: "Generator stron internetowych.", url: "https://create-your-site-540.lovable.app" },
+  { id: "4b54deed-3412-4c86-89b7-96454a23cd03", name: "MySkin Harmony", desc: "Narzędzie dla kosmetologów." },
+  { id: "1e28570c-b51f-4874-ac4f-6940d340ccd7", name: "Polish PDF Translator", desc: "Tłumaczenie plików PDF na polski." },
+  { id: "74271866-0ec7-48e3-99c6-568d3612a804", name: "SkinAI Expert", desc: "Analiza skóry ze zdjęć." },
+  { id: "de51daed-80d3-42ed-abd5-85ad5c9578ca", name: "Esthetic Care Hub", desc: "Strona kliniki medycyny estetycznej." },
+  { id: "90ace187-726f-42db-8d5d-7d23173a5eed", name: "Remix of Beauty Mind Clinic", desc: "Strona Beauty & Mind Clinic." },
+  { id: "4108e61d-b1be-4518-8f16-086bc34a8892", name: "Remix of The Freedom Framework", desc: "Oferta dla kobiet biznesu." },
+  { id: "c96d498d-083c-4941-af13-d0d6568bacf5", name: "The Freedom Framework", desc: "Oferta dla kobiet biznesu." },
+  { id: "2483e8c7-7cff-41c7-a664-4ac16fa00295", name: "Radiant Renewal", desc: "Odmładzanie skóry bez skalpela." },
+  { id: "bbf000bd-d6e4-4c28-9899-5e2046bbaaea", name: "Easy PDF Access", desc: "Dostęp do pliku PDF pod przyciskiem." },
+];
