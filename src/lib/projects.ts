@@ -2,7 +2,7 @@ export type Project = { id: string; name: string; desc: string; url?: string };
 
 export const projects: Project[] = [
   { id: "32b4684c-a2ce-4bce-b7da-40db3aef002d", name: "Design Magic Box", desc: "Zamienia projekty z Figmy na gotowe strony." },
-  { id: "7c40afc9-5d62-4e26-8703-fb0c05436327", name: "Beauty Clinic", desc: "Strona kliniki Beauty & Mind w Siedlcach.", url: "https://glow-medspa-hub.lovable.app" },
+  { id: "7c40afc9-5d62-4e26-8703-fb0c05436327", name: "Beauty Clinic", desc: "Strona kliniki Beauty \n\n", url: "https://glow-medspa-hub.lovable.app" },
   { id: "625b2d17-3bd2-491f-ba0f-9c0134c08779", name: "mcml.pro", desc: "Przewodnik po zabiegu laserowym LHP.", url: "https://https-gentle-lhp-journey-lovable-app.lovable.app" },
   { id: "c7e70e03-3f90-4937-861a-ddfdd71d13d5", name: "Graftgen.com", desc: "Opieka po przeszczepie włosów.", url: "https://graft-guardian-protocol.lovable.app" },
   { id: "1f31b8b6-8c8e-4be7-8a9d-1c7b9c2b9e3e", name: "Your Health Compass", desc: "Przygotowanie do konsultacji proktologicznych i flebologicznych." },
