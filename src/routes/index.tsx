@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { allProjectsZip, projects } from "@/lib/projects";
+import { ProjectMatcher } from "@/components/ProjectMatcher";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,6 +43,7 @@ function Index() {
           <span className="text-xs opacity-80">{formatSize(allProjectsZip.size)}</span>
         </a>
       </header>
+      <ProjectMatcher />
       <ul className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
           <li key={p.id} className="flex flex-col rounded-xl border border-border bg-card p-5 shadow-soft transition hover:-translate-y-0.5">
