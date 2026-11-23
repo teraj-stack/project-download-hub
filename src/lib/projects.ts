@@ -1,5 +1,11 @@
 export type Project = { id: string; name: string; desc: string; url?: string; zip?: { url: string; name: string; size: number } };
 
+export const allProjectsZip = {
+  url: "/__l5e/assets-v1/0baebc9a-5ab9-496d-afc7-9e660c77f12d/wszystkie-projekty.zip",
+  name: "wszystkie-projekty.zip",
+  size: 392934859,
+};
+
 export const projects: Project[] = [
   { id: "32b4684c-a2ce-4bce-b7da-40db3aef002d", name: "Design Magic Box", desc: "Zamienia projekty z Figmy na gotowe strony.", zip: { url: "/__l5e/assets-v1/55b57bfd-bd33-43ef-9df2-0c4a697bfbb4/design-magic-box.zip", name: "design-magic-box.zip", size: 138915 } },
   { id: "7c40afc9-5d62-4e26-8703-fb0c05436327", name: "Beauty Clinic", desc: "Strona kliniki Beauty \n\n", url: "https://glow-medspa-hub.lovable.app", zip: { url: "/__l5e/assets-v1/f3e9c486-25d6-40e8-838c-27c7043af51d/beauty-clinic.zip", name: "beauty-clinic.zip", size: 3508284 } },

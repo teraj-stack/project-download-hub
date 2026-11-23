@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { projects } from "@/lib/projects";
+import { allProjectsZip, projects } from "@/lib/projects";
 
 // The download button only renders when a project carries a zip pointer, so the
 // pointer data is the rule: every packaged project must resolve to a same-origin
@@ -16,6 +16,13 @@ describe("Project downloads", () => {
 
     expect(withoutZip).toEqual(["Remix of The Freedom Framework"]);
     expect(projects.filter((p) => p.zip)).toHaveLength(21);
+  });
+
+  it("offers one combined download with all packaged projects", () => {
+    expect(allProjectsZip.url.startsWith("/__l5e/assets-v1/")).toBe(true);
+    expect(allProjectsZip.url.endsWith(`/${allProjectsZip.name}`)).toBe(true);
+    expect(allProjectsZip.name.endsWith(".zip")).toBe(true);
+    expect(allProjectsZip.size).toBeGreaterThan(0);
   });
 
   it("points every download at a same-origin asset with a zip name and a real size", () => {

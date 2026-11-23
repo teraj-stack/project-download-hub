@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { projects } from "@/lib/projects";
+import { allProjectsZip, projects } from "@/lib/projects";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,6 +28,19 @@ function Index() {
         <p className="text-sm uppercase tracking-[0.2em] text-primary">Medical Lasers</p>
         <h1 className="mt-3 font-display text-5xl text-foreground md:text-6xl">Moje projekty</h1>
         <p className="mt-4 text-muted-foreground">{projects.length} projektów w jednym miejscu.</p>
+        <a
+          href={allProjectsZip.url}
+          download={allProjectsZip.name}
+          className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 font-medium text-primary-foreground shadow-soft transition hover:opacity-90"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true">
+            <path d="M12 3v12" />
+            <path d="m7 11 5 5 5-5" />
+            <path d="M5 21h14" />
+          </svg>
+          Pobierz wszystkie
+          <span className="text-xs opacity-80">{formatSize(allProjectsZip.size)}</span>
+        </a>
       </header>
       <ul className="mx-auto mt-12 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
